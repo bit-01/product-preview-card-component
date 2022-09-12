@@ -1,122 +1,152 @@
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    margin: .5em 0;
-  }
-  .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  margin: .5em 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  width: 488px;
+  height: 367px;
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+article>* {
+  flex: 1 100%;
+}
+
+article picture,
+article main {
+  flex: inherit;
+}
+
+article picture {
+  width: 50%;
+  height: 100%;
+}
+
+article picture img {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+article main {
+  width: 40%;
+  padding: 1.5em;
+}
+
+summary {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-size: 12px;
+}
+
+p,
+summary {
+  color: hsl(228, 12%, 48%);
+}
+
+h1,
+.price .new {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+h1 {
+  margin: .7em 0;
+  line-height: 1;
+}
+
+p {
+  font-size: 13px;
+}
+
+.price {
+  margin: 1.5em 0;
+}
+
+.new {
+  color: hsl(158, 36%, 37%);
+  margin-right: .5em;
+}
+
+.old {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  padding: 0.7em;
+  border: 0;
+  width: 100%;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button:hover, button:active, button:focus {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+
+button img {
+  margin: 0 .3rem;
+
+}
+
+@media all and (max-width: 767px) {
   body {
-    background-color: hsl(30, 38%, 92%);
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+    position: relative;
   }
+
   .container {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    padding: 2em 1em;
+    height: unset;
   }
+
   article {
-    width: 488px;
-    height: 367px;
-    border-radius: 6px;
-    background-color: #fff;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  article > * {
-    flex: 1 100%;
-  }
-  article picture, article main {
-    flex: inherit;
-  }
-  article picture {
-    width: 50%;
-    height: 100%;
-  }
-  article picture img {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  article main {
-    width: 40%;
-    padding: 1.5em;
-  }
-  summary {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;  
-    letter-spacing: .3rem;
-    font-size: 12px;
-  }
-  p, summary {
-    color: hsl(228, 12%, 48%); 
-  }
-  h1, .price .new {
-    font-family: 'Fraunces', serif;
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-  h1 {
-    margin: .7em 0;
-    line-height: 1;
-  }
-  p {
-    font-size: 13px;
-  }
-  .price {
-    margin: 1.5em 0;
-  }
-  .new {
-    color: hsl(158, 36%, 37%);
-    margin-right: .5em;
-  }
-  .old {
-    text-decoration: line-through; 
-  }
-  button {
-    background-color: hsl(158, 36%, 37%);
-    color: #fff;
-    padding: 0.7em;
-    border: 0;
     width: 100%;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 14px;
+    height: auto;
+    margin: auto;
   }
-  button:hover {
-    background-color: #1a4031;
-    cursor: pointer;
-  }
-  button img {
-    margin: 0 .3rem;
 
+  article picture {
+    width: 100%;
+    height: auto;
   }
-  @media all and (max-width: 767px) {
-    body {
-      position: relative;
-    }
-    .container {
-      padding: 2em 1em;
-      height: unset;
-    }
-    article {
-      width: 100%;
-      height: auto;
-      margin: auto;
-    }
 
-    article picture {
-      width: 100%;
-      height: auto;
-    } 
-    article main {
-      width: 100%;
-    }
-    article picture img {
-      border-bottom-left-radius: unset;
-      border-top-right-radius: 7px;
-    }
+  article main {
+    width: 100%;
   }
+
+  article picture img {
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 7px;
+  }
+}
