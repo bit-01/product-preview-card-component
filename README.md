@@ -27,16 +27,16 @@ Users should be able to:
 
 ### Screenshot
 
-- Desktop Preview 
+- Desktop Preview\
 ![Desktop Preview](./images/preview.png)
-- Mobile Preview (width = 375px)
+- Mobile Preview (width = 375px)\
 ![Mobile Preview](./images/preview-mobile.png)
 
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://gitlab.com/bit-01/product-preview-card-component)
+- Live Site URL: [Live Site](https://bit-01.gitlab.io/product-preview-card-component)
 
 ## My process
 
