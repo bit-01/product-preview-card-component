@@ -59,7 +59,7 @@ article section {
   padding: 1.5em;
 }
 
-summary {
+.header {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: .3rem;
@@ -67,7 +67,7 @@ summary {
 }
 
 p,
-summary {
+.header {
   color: hsl(228, 12%, 48%);
 }
 
